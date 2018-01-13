@@ -6,7 +6,7 @@
 
 # Quickchat
 
-Securely talk with friends instantly [QuickChat](http://www.quicktalk.me)
+Securely talk with friends instantly <a href="http://www.quicktalk.me">QuickChat</a>
 
 #### Installation
 
