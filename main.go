@@ -49,7 +49,7 @@ func main() {
 	r.HandleFunc("/{Name}", ShowChat).Methods("GET")                      // chat page
 	r.HandleFunc("/ws/{ID}/{username}", Chat)                             // websocket connection page
 	r.HandleFunc("/chat/create", CreateChat).Methods("POST")              // create chat
-	CSRF := csrf.Protect(database.RandStringBytes())
+	CSRF := csrf.Protect(database.RandStringBytes(), csrf.Secure(false))
 	log.Println("Server running ... ")
 	http.ListenAndServe("0.0.0.0:80", CSRF(r))
 }
