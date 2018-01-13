@@ -1,7 +1,7 @@
 ![Reading 6th Grade Level](http://forthebadge.com/images/badges/reading-6th-grade-level.svg)
 ![No Ragrets](http://forthebadge.com/images/badges/no-ragrets.svg)
 <p align="center">
-  <img width="300" height="300" src="https://github.com/ashleymcnamara/gophers/blob/master/GO_BUILD.png?raw=true">
+  <img width="300" height="300" src="https://github.com/ashleymcnamara/gophers/blob/master/BATMAN_GOPHER.png">
 </p>
 
 # Quickchat
@@ -16,9 +16,9 @@ go get github.com/dragonzurfer/quickchat
 
 #### Usage
 
-![Demo 1](https://github.com/dragonzurfer/quickchat/blob/master/demo/demo1.gif)
+![Demo 1](https://github.com/dragonzurfer/quickchat/blob/master/demo/demo1.png)
 
-![Demo 2](https://github.com/dragonzurfer/quickchat/blob/master/demo/demo2.gif)
+![Demo 2](https://github.com/dragonzurfer/quickchat/blob/master/demo/demo2.png)
 
 
 #### Contributions
