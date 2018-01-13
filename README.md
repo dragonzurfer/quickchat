@@ -25,7 +25,7 @@ go get github.com/dragonzurfer/quickchat
 
 1. Fork It
 
-2. Clone It ```git clone https://github.com/<YOUR_HANDLENAME>/moe.git```
+2. Clone It ```git clone https://github.com/<YOUR_HANDLENAME>/quickchat.git```
 
 3. Get your own branch```git checkout -b YOUR_FEATURE```
 
