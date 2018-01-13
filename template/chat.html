@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{.ChatName}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/emoji-picker/1.1.5/css/emoji.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="/static/css/chat.css">
+  
+</head>
+<body>
+<span id="chatID" style="display: none;">{{.ID}}</span>
+<div class="notification">Connected</div>
+
+<div class="chat-input">
+  <div class="text-input">
+    <textarea name="message" id="msg" cols="40" rows="2" autofocus placeholder="Message"></textarea>
+  </div>
+  <div class="btn-send" id="btn-send"><i class="fa fa-paper-plane" aria-hidden="true"></i>
+</div>
+</div>
+
+<div class="container"></div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/autosize@4.0.0/dist/autosize.min.js'></script>
+
+
+<script src="/static/js/chat.js"></script>
+
+<script type="text/javascript">
+  var chatName = {{.ChatName}};
+  var EncMessages = [];
+  {{range .comments}}
+    EncMessages.push([{{.Username}}, `{{.CreatedAt.Day}}-{{.CreatedAt.Month}} {{.CreatedAt.Hour}}:{{.CreatedAt.Minute}}`,{{.Message}}]);
+  {{end}}
+</script>
+<span id="csrf">{{.csrfField}}</span>
+</body>
+
+</html>
