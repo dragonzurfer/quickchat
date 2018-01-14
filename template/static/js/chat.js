@@ -15,20 +15,23 @@ $(document).ready(function() {
         $page = $('html,body'),
         amountOfColors = 18,
         csrf = document.getElementById("csrf").value ,
-        month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+        promptTries = 0;
 
 
     // Get key for User and Chat
-    var keyquery = "Chat key"
-    while (!key) {
-        key = prompt("Chat key");
+    while (!key && promptTries < 2) {
+        key = prompt("Enter KEY to unlock this chat");
+        promptTries++;
     }
     ENCRYPTED_KEY = CryptoJS.SHA512(chatName + key.trim());
 
-    var usernamequery = "Your username", userkeyquery = "User Passcode";
-    while (!userkey && !user) {
-        user = prompt(usernamequery);
-        userkey = prompt(userkeyquery);
+    promptTries = 0;
+    
+    while (!userkey && !user && promptTries < 2) {
+        user = prompt("Create/Enter existing Username(Name used in chat)\nIf username exists, you'll be Disconnected :( ");
+        userkey = prompt("Enter Password for " + user);
+        promptTries++;
     }
     ENCRYPTED_USERKEY = CryptoJS.SHA512(chatName + userkey.trim());
 

@@ -10,30 +10,33 @@ body {
     margin-bottom: 2px;
 }
 .login-page {
-    width: 360px;
+    /* width: 360px; */
     margin:0 auto;
 }
 .input-group {
     background: #141414;
-    padding: 10px 20px;
-    border-radius: 11px;
+    padding: 0px 3px;
+    border-radius: 3px;
     padding-bottom: 12px;
+    max-width: 279px;
+    display: block;
+    margin: 10px auto;
 }
 .form {
     position: relative;
     z-index: 1;
-    max-width: 360px;
+    /* max-width: 460px; */
     margin: 0 auto;
-    padding:45px;
+    /* padding:45px; */
     text-align: center;
+    width: 100%;
 }
 .form input:first-child {
     margin-bottom: 16px;
 }
 .form input {
     font-family: sans-serif;
-    outline: 1;
-    width: 100%;
+    width: 70%;
     border: 0;
     padding: 12px 46px;
     box-sizing: border-box;
@@ -41,6 +44,7 @@ body {
     background: inherit;
     color: white;
     border-bottom: 3px solid #555;
+    text-align: center;
 }
 .form input:active,
 .form input:hover,
@@ -52,13 +56,12 @@ body {
 }
 .form button {
     font-family: "Roboto", sans-serif;
-    background: #08a145;
     padding: 15px 50px;
     color: #FFFFFF;
     font-size: 16px;
     cursor: pointer;
     border: none;
-    margin-top: 10px;
+    margin: 10px auto;
     border-radius: 7px;
     font-weight: bolder;
     text-transform: uppercase;
@@ -70,7 +73,6 @@ body {
     text-transform: uppercase;
     font-size: .8rem;
     font-weight: 900;
-    margin-bottom: 7px;
 }
 .user-wrapper {
     background: #2f2b2b;
@@ -92,4 +94,31 @@ body {
     font-family: sans-serif;
     font-size: 1.1rem;
     letter-spacing: 2px;
+}
+#chatname {
+    display: inline;
+    padding: 4px 9px;
+    max-width: 160px;
+    position: relative;
+    margin-top: 12px;
+}
+.chatname-wrapper {
+    font-family: monospace;
+    margin: 2rem 1rem;
+    font-size: 18px;
+}
+.italic {
+    font-style: italic;
+}
+#key-logo {
+    max-width: 30px;
+    position: relative;
+    top: 14px;
+    left: -5px;
+}
+.users {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
