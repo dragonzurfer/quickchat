@@ -83,6 +83,7 @@ body {
     position: relative;
     display: block;
     margin: 0 auto;
+    margin-top: 3rem;
 }
 .user-wrapper img {
     width: 100%;
@@ -115,10 +116,4 @@ body {
     position: relative;
     top: 14px;
     left: -5px;
-}
-.users {
-    position: fixed;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
 }
