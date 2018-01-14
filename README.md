@@ -8,6 +8,12 @@
 
 Securely talk with friends instantly <a href="http://www.quicktalk.me">QuickChat</a>
 
+* The chat exist for 24 hours and get deleted on crosing 24 hours.
+
+* All messages send and recieved are in encrypted form.
+
+* Your key never leaves your system
+
 #### Installation
 
 ```go
