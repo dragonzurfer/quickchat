@@ -9,7 +9,7 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"quickchat/database"
+	"github.com/dragonzurfer/quickchat/database"
 	"strconv"
 )
 
