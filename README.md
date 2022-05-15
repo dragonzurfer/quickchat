@@ -6,7 +6,7 @@
 
 # Quickchat
 
-Securely talk with friends instantly <a href="http://www.quicktalk.me">QuickChat</a>
+Securely talk with friends instantly 
 
 * The chat exist for 24 hours and get deleted on crosing 24 hours.
 
